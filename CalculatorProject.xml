@@ -510,7 +510,7 @@ count(//ns1:SubtractResult)</path><content>1</content><allowWildcards>false</all
 declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
 //ns1:SubtractResponse</path><content>&lt;SubtractResponse xmlns="http://tempuri.org/" xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   &lt;SubtractResult>*&lt;/SubtractResult>
-&lt;/SubtractResponse></content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="9252b613-8372-412a-b814-08df105d061b" name="Calc_TS_Params"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c041bdd7-713b-4218-a17a-e0dd042bcb93" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Multiply_CustProperties" searchProperties="true"><con:settings/><con:testStep type="request" name="TC_Multiply" id="77e45713-40f8-465c-9277-438a4de2f749"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Multiply</con:operation><con:request name="TC_Multiply" id="26f43733-b644-4394-b3f8-fba6550201c6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+&lt;/SubtractResponse></content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="9252b613-8372-412a-b814-08df105d061b" name="Calc_TS_Params"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c041bdd7-713b-4218-a17a-e0dd042bcb93" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Multiply_CustProperties" searchProperties="true"><con:settings/><con:testStep type="request" name="TC_Multiply_TCParam" id="77e45713-40f8-465c-9277-438a4de2f749"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Multiply</con:operation><con:request name="TC_Multiply_TCParam" id="26f43733-b644-4394-b3f8-fba6550201c6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
    <soap:Header/>\r
    <soap:Body>\r
       <tem:Multiply>\r
@@ -518,7 +518,7 @@ declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
          <tem:intB>${#TestCase#no2}</tem:intB>\r
       </tem:Multiply>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ee4a7e97-5c63-47b1-9f47-f407e65549bb"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="TC_Divide" id="15a70829-680d-4b14-939f-5a143b3cdc08"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Divide</con:operation><con:request name="TC_Divide" id="fd33bc08-c971-4d64-9028-dc6124252676"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ee4a7e97-5c63-47b1-9f47-f407e65549bb"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="TC_Divide_SuiteParam" id="15a70829-680d-4b14-939f-5a143b3cdc08"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Divide</con:operation><con:request name="TC_Divide_SuiteParam" id="fd33bc08-c971-4d64-9028-dc6124252676"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
    <soap:Header/>\r
    <soap:Body>\r
       <tem:Divide>\r
@@ -567,7 +567,7 @@ declare namespace tem='http://tempuri.org/';
    <soap:Header/>\r
    <soap:Body>\r
       <tem:Add>\r
-         <tem:intA>4</tem:intA>\r
+         <tem:intA>18</tem:intA>\r
          <tem:intB>6</tem:intB>\r
       </tem:Add>\r
    </soap:Body>\r
@@ -579,7 +579,7 @@ declare namespace tem='http://tempuri.org/';
    <soap:Header/>
    <soap:Body>
       <tem:Divide>
-         <tem:intA>10</tem:intA>
+         <tem:intA>24</tem:intA>
          <tem:intB>3</tem:intB>
       </tem:Divide>
    </soap:Body>
@@ -606,5 +606,204 @@ log.info context.expand('${#TestCase#no2}')
 //access TC_Add custom property 'no'
 log.info testRunner.testCase.testSuite.testCases["TC_Add"].getPropertyValue("no")
 
+//in same TC
+log.info testRunner.testCase.getPropertyValue('no2')
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script Print other tc" id="923dbc1a-5ac7-4686-9b86-e7a5bc9f1c55"><con:settings/><con:config><script>//print other test case request property value 
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Endpoint")
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Request")</script></con:config></con:testStep><con:properties><con:property><con:name>no1</con:name><con:value>12</con:value></con:property><con:property><con:name>no2</con:name><con:value>18</con:value></con:property></con:properties></con:testCase><con:testCase id="b4d175d2-862a-4857-809f-04451356640e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Multiply" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="20bd00f7-940c-4bbc-b31f-88a729d11dac" name="TS_GroovyScript2"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="93201cd2-e19a-4138-bb78-d65faee93ca3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_GroovyScript" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script - setProps" id="9f7169a0-8cec-4627-a231-e50a6cbb5b2d"><con:settings/><con:config><script>//set no1 and no2
+testRunner.testCase.testSuite.testCases["TC_Add"].setPropertyValue("n1", "182")
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].getPropertyValue("n1")
 
-</script></con:config></con:testStep><con:properties><con:property><con:name>no1</con:name><con:value>12</con:value></con:property><con:property><con:name>no2</con:name><con:value>18</con:value></con:property></con:properties></con:testCase><con:testCase id="b4d175d2-862a-4857-809f-04451356640e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Multiply" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>P_NO1</con:name><con:value>8</con:value></con:property><con:property><con:name>P_NO2</con:name><con:value>90</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+//in same TC
+log.info testRunner.testCase.getPropertyValue('no2')
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script Print other tc" id="e5028a72-c04a-4eb9-a23c-1684cfcee274"><con:settings/><con:config><script>//print other test case request property value 
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Endpoint")
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Request")</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script from Project TC" id="48905332-346c-4d7b-b8b3-3f3eaf9cb4e2"><con:settings/><con:config><script>//print other test case request property value 
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Endpoint")
+log.info testRunner.testCase.testSuite.testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Request")
+
+def project = testRunner.testCase.testSuite.project
+log.info "hello"+project
+log.info project.getPropertyValue("P_NO1")
+
+//traverse to other TC from project level.
+log.info testRunner.testCase.testSuite.project.testSuites["TS_GroovyScript"].testCases["TC_Add"].testSteps["Sum"].getPropertyValue("Endpoint")</script></con:config></con:testStep><con:properties><con:property><con:name>no1</con:name><con:value>12</con:value></con:property><con:property><con:name>no2</con:name><con:value>18</con:value></con:property></con:properties></con:testCase><con:testCase id="bd8606c6-e528-4922-b5b2-aeeddabd6cc3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Add" searchProperties="true"><con:settings/><con:testStep type="request" name="Sum" id="f681180f-aeec-428a-b518-f429f2817e19"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Add</con:operation><con:request name="Sum" id="a7a241ad-6fa3-4429-93f7-78dd8b50a18d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Add>\r
+         <tem:intA>${#TestCase#n1}</tem:intA>\r
+         <tem:intB>4</tem:intB>\r
+      </tem:Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="71ad494d-3146-4794-b709-87c4aafcf92d"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>no</con:name><con:value>89</con:value></con:property><con:property><con:name>n1</con:name><con:value>182</con:value></con:property><con:property><con:name>n2</con:name><con:value>3</con:value></con:property></con:properties></con:testCase><con:testCase id="4cccd039-d63f-425c-8af7-58b3e791dc5e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Multiply" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="34394eba-1de9-4b8b-b05b-17d35c3246b7" name="TS_GroovyScript_AddReq"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="18cc9aeb-68f9-49cd-b843-51709ac5cbc2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Addition" searchProperties="true"><con:settings/><con:testStep type="request" name="Addition" id="0a4cabfd-0566-4204-837b-2cdd90a36aba"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Add</con:operation><con:request name="Addition" id="70362156-3fe1-4cc9-a366-e5c675343f37"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Add>
+         <tem:intA>17</tem:intA>
+         <tem:intB>09</tem:intB>
+      </tem:Add>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5f7af99d-94bf-4790-8201-b396cc829c11"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>n1</con:name><con:value>23</con:value></con:property><con:property><con:name>n2</con:name><con:value>09</con:value></con:property></con:properties></con:testCase><con:testCase id="2e28ecea-1cf2-4408-b7fb-c2da3a932246" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_GvoovyUsingLibs" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Req - Sum" id="ff504c97-9869-4080-8fff-aaf8aef4dd31"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder //xmlholder: To parse the xml 
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext //to send requests
+
+//Objective: Perform soap request through groovy
+//1. get the request xml
+//2. store in xmlholder
+//3. set the node values
+//4. save the xml
+
+
+def additionReq = testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"].getPropertyValue("Request")
+def xmlAdd = new XmlHolder(additionReq) //store the xml in xmlholder class
+//log.info xmlAdd.getXml() //logs entire xml
+
+//set node value
+//xmlAdd.setNodeValue("xpath","value")
+xmlAdd.setNodeValue("//tem:Add/tem:intA", "17")
+log.info xmlAdd.getNodeValue("//tem:Add/tem:intA")
+
+def no2 = testRunner.testCase.testSuite.testCases["TC_Addition"].getPropertyValue("n2")
+log.info "no2: "+no2
+xmlAdd.setNodeValue("//tem:Add/tem:intB", no2)
+log.info xmlAdd.getNodeValue("//tem:Add/tem:intB")
+
+//save the xml to new variable
+def newAddXml = xmlAdd.getXml()
+log.info newAddXml
+
+//replace the TC_Addition request with above
+testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"].setPropertyValue("Request", newAddXml)
+
+//-------------------------------------------------------------------send request
+//send request to server. Using wsdl run context
+//context scope: test level
+//changing the context scope to TC. Here 'TC_Addition' test case
+//AddtestStep.run(testRunner, context)
+
+def addTestStep = testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"]
+//expects the step
+def contextAdditionTC = new WsdlTestRunContext(addTestStep)
+addTestStep.run(testRunner, contextAdditionTC)
+//-------------------------------------------------------------------send request: end
+
+def additionResponse = testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"].getPropertyValue("Response")</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="66613462-7e21-428d-a7a9-0b8a7830989c" name="TS_Groovy_DivideReq"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="97dcefbc-57fb-404d-9a90-3ac21b7a9e74" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Divide" searchProperties="true"><con:settings/><con:testStep type="request" name="DivideStep" id="fb3c7e3d-3a83-42f1-9850-76906b00c1f8"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Divide</con:operation><con:request name="DivideStep" id="aeb7bbf7-82b4-4565-881e-13b6cbdb859d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Divide>
+         <tem:intA>21</tem:intA>
+         <tem:intB>3</tem:intB>
+      </tem:Divide>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0e0f77dd-e012-48c6-807f-31a39a247489"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>n1</con:name><con:value>12</con:value></con:property><con:property><con:name>n2</con:name><con:value>3</con:value></con:property></con:properties></con:testCase><con:testCase id="f9065e30-5be2-4e40-8449-7b0e54129e68" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_GvoovyUsingLibs" searchProperties="true"><con:settings/><con:testStep type="groovy" name="DivideGroovyReq" id="51c503c8-bc05-4335-9cea-e914e457055e"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder //xmlholder: To parse the xml 
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext //to send requests
+
+//Objective: Perform soap request through groovy
+//1. get the request xml
+//2. store in xmlholder
+//3. set the node values
+//4. save the xml
+
+
+def additionReq = testRunner.testCase.testSuite.testCases["TC_Divide"].testSteps["DivideStep"].getPropertyValue("Request")
+def xmlAdd = new XmlHolder(additionReq) //store the xml in xmlholder class
+//log.info xmlAdd.getXml() //logs entire xml
+
+//set node value
+//xmlAdd.setNodeValue("xpath","value")
+xmlAdd.setNodeValue("//tem:Divide/tem:intA", "21")
+log.info xmlAdd.getNodeValue("//tem:Divide/tem:intA")
+
+def no2 = testRunner.testCase.testSuite.testCases["TC_Divide"].getPropertyValue("n2")
+log.info "no2: "+no2
+xmlAdd.setNodeValue("//tem:Divide/tem:intB", no2)
+log.info xmlAdd.getNodeValue("//tem:Divide/tem:intB")
+
+//save the xml to new variable
+def newAddXml = xmlAdd.getXml()
+log.info newAddXml
+
+//replace the TC_Addition request with above
+testRunner.testCase.testSuite.testCases["TC_Divide"].testSteps["DivideStep"].setPropertyValue("Request", newAddXml)
+
+//-------------------------------------------------------------------send request
+//send request to server. Using wsdl run context
+//context scope: test level
+//changing the context scope to TC. Here 'TC_Addition' test case
+//AddtestStep.run(testRunner, context)
+
+def addTestStep = testRunner.testCase.testSuite.testCases["TC_Divide"].testSteps["DivideStep"]
+//expects the step
+def contextAdditionTC = new WsdlTestRunContext(addTestStep)
+addTestStep.run(testRunner, contextAdditionTC)
+//-------------------------------------------------------------------send request: end
+
+def additionResponse = testRunner.testCase.testSuite.testCases["TC_Divide"].testSteps["DivideStep"].getPropertyValue("Response")</script></con:config></con:testStep><con:loadTest id="57c001fe-7481-48c4-a3a8-9a445eea4cb2" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>3</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>10</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="810d0b2d-54ec-452d-9907-df920db87540" name="TS_Groovy_DivideReqAssertion"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fd306efd-f491-479f-b4f7-3fd456d28b74" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_Addition" searchProperties="true"><con:settings/><con:testStep type="request" name="Addition" id="15635a4f-46ba-4c18-9e62-7345b8ba70da"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Add</con:operation><con:request name="Addition" id="70362156-3fe1-4cc9-a366-e5c675343f37"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Add>
+         <tem:intA>18</tem:intA>
+         <tem:intB>10</tem:intB>
+      </tem:Add>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5f7af99d-94bf-4790-8201-b396cc829c11"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>n1</con:name><con:value>23</con:value></con:property><con:property><con:name>n2</con:name><con:value>10</con:value></con:property></con:properties></con:testCase><con:testCase id="ba6f8825-fd3c-4522-9f37-e3890b5000ec" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC_GvoovyUsingLibs" searchProperties="true"><con:settings/><con:testStep type="groovy" name="SumGroovyReq" id="7791a1fb-ff80-4b2f-9cfe-fec4d58415b1"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder //xmlholder: To parse the xml 
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext //to send requests
+
+//Objective: Perform soap request through groovy
+//1. get the request xml
+//2. store in xmlholder
+//3. set the node values
+//4. save the xml
+//5. send the request
+//6. get the response and assert
+
+
+def additionReq = testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"].getPropertyValue("Request")
+def xmlAdd = new XmlHolder(additionReq) //store the xml in xmlholder class
+//log.info xmlAdd.getXml() //logs entire xml
+
+//set node value
+//xmlAdd.setNodeValue("xpath","value")
+xmlAdd.setNodeValue("//tem:Add/tem:intA", "18")
+log.info xmlAdd.getNodeValue("//tem:Add/tem:intA")
+
+def no2 = testRunner.testCase.testSuite.testCases["TC_Addition"].getPropertyValue("n2")
+log.info "no2: "+no2
+xmlAdd.setNodeValue("//tem:Add/tem:intB", no2)
+log.info xmlAdd.getNodeValue("//tem:Add/tem:intB")
+
+//save the xml to new variable
+def newAddXml = xmlAdd.getXml()
+log.info newAddXml
+
+//replace the TC_Addition request with above
+testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"].setPropertyValue("Request", newAddXml)
+
+
+//*******************  send request ******************* 
+//send request to server. Using wsdl run context
+//context scope: test level
+//changing the context scope to TC. Here 'TC_Addition' test case
+//AddtestStep.run(testRunner, context)
+
+def addTestStep = testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"]
+//execute the step
+def contextAdditionTC = new WsdlTestRunContext(addTestStep)
+addTestStep.run(testRunner, contextAdditionTC)
+//******************* send request: end *****************
+
+
+//******************* retrieve the response: start ******************* 
+//1. get response xml
+def additionResponseXml = testRunner.testCase.testSuite.testCases["TC_Addition"].testSteps["Addition"].getPropertyValue("Response")
+log.info additionResponseXml
+//2. create a xmlHolder object
+def respHolder = new XmlHolder(additionResponseXml)
+//3. Use name space if response xml has else define a new one like below
+respHolder.namespaces["ns"] = "http://tempuri.org/"
+//4. get the response node value with above name space
+def sum = respHolder.getNodeValue("//ns:AddResponse/ns:AddResult")
+//******************* retrieve the response: end ******************* 
+
+//******************* assert : start ******************* 
+assert sum == "28"
+//******************* assert : end   ******************* </script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>P_NO1</con:name><con:value>8</con:value></con:property><con:property><con:name>P_NO2</con:name><con:value>90</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
